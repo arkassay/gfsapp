@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/themes/GFSAPP.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.structure-1.3.1.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+		
+		
+	</head>
+	<body data-theme="a">
+		<div id="home" data-role="page" data-theme="a" data-title="GFS - Home">
+			<div data-role="header" data-position="fixed" data-id="gf_header">
+				<h1>GFS App</h1>
+				<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog" class="ui-btn-right" >Info</a>
+			</div>
+			<div data-role="content" data-theme="a">
+				<p>Welcome to GFS App!</p>
+					<ul data-role="controlgroup" data-inset="true">
+						<li>
+							<a href="#blog" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Blog</a>
+						</li>
+						<li>
+							<a href="#restaurantSearch" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Restaurant Search</a>
+						</li>
+						<li>
+							<a href="#photos" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Photos</a>
+						</li>
+						<li>
+							<a href="#tweets" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Tweets</a>
+						</li>
+					</ul><!-- links -->
+			</div>
+		</div><!--end #home-->
+		
+		<div id="blog" data-role="page" data-theme="a" data-title="GFS - Blog">
+			<div data-role="header" data-position="fixed" data-id="gf_header">
+				<h1>Blog</h1>
+				<a href="#home" data-icon="home" class="ui-btn-left" data-iconpos="notext" data-transition="slide" data-direction="reverse">Home</a>
+				<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog" class="ui-btn-right">Info</a>
+			</div>
+			<div data-role="content" data-theme="a" id="postList">
+				
+			</div>
+			<div data-role="footer" data-position="fixed" data-fullscreen="false" data-id="gf_footer">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" data-role="button" data-mini="true" data-icon="arrow-r" data-transition="slide" data-direction="reverse">Home</a></li>
+						<li><a href="#" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r" class="ui-btn-active">Blog</a></li>
+						<li><a href="#restaurantSearch" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Restaurant Search</a></li>
+						<li><a href="#photos" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Photos</a></li>
+						<li><a href="#tweets" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Tweets</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div><!--end #blog-->
+		<div id="blogpost" data-role="page" data-theme="a" data-title="GFS - Blog Post">
+			<div data-role="header" data-position="fixed" data-id="gf_header">
+				<h1>Post</h1>
+				<a href="#blog" data-icon="back" class="ui-btn-left" data-iconpos="notext" data-transition="slide" data-direction="reverse">Blog</a>
+			</div><!--end header-->
+			<div data-role="content" data-theme="a">
+				<div id="mypost" data-theme="a">
+					
+				</div><!--end #post-->
+			</div><!--end content-->
+			<div data-role="footer" data-position="fixed" data-fullscreen="false" data-id="gf_footer">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" data-role="button" data-mini="true" data-icon="arrow-r" data-transition="slide" data-direction="reverse">Home</a></li>
+						<li><a href="#blog" data-transition="slide" data-role="button" data-mini="true" data-icon="back" class="ui-btn-active" data-direction="reverse">Blog</a></li>
+						<li><a href="#restaurantSearch" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Restaurant Search</a></li>
+						<li><a href="#photos" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Photos</a></li>
+						<li><a href="#tweets" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Tweets</a></li>
+					</ul>
+				</div><!--end navbar-->
+			</div><!--end footer-->
+		</div><!--end blog-post-->
+		<div id="restaurantSearch" data-role="page" data-theme="a" data-title="GFS - Restaurant Search">
+			<div data-role="header" data-position="fixed" data-id="gf_header">
+				<h1>Restaurant Search</h1>
+				<a href="#home" data-icon="home" class="ui-btn-left" data-iconpos="notext" data-transition="slide" data-direction="reverse">Home</a>
+				<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog" class="ui-btn-right" data-transition="slide">Info</a>
+			</div><!--end header-->
+			<div data-role="content" data-theme="a" data-fullscreen="false">
+				<p>Search the GF Restaurant Directory</p>
+			</div><!--end content-->
+			<div data-role="footer" data-position="fixed" data-fullscreen="false" data-id="gf_footer">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" data-role="button" data-mini="true" data-icon="arrow-r" data-transition="slide" data-direction="reverse">Home</a></li>
+						<li><a href="#blog" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Blog</a></li>
+						<li><a href="#" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r" class="ui-btn-active">Restaurant Search</a></li>
+						<li><a href="#photos" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Photos</a></li>
+						<li><a href="#tweets" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Tweets</a></li>
+					</ul>
+				</div><!--end navbar-->
+			</div><!--end footer-->
+		</div><!--end #restaurantSearch-->
+		
+		<div id="tweets" data-role="page" data-theme="a" data-title="GFS - Tweets">
+			<div data-role="header" data-position="fixed" data-id="gf_header">
+				<h1>Twitter Feed</h1>
+				<a href="#home" data-icon="home" class="ui-btn-left" data-iconpos="notext" data-transition="slide" data-direction="reverse">Home</a>
+				<a href="#info" data-icon="info" data-iconpos="notext" data-rel="dialog" class="ui-btn-right" data-transition="slide">Info</a>
+			</div><!--end header-->
+			<div data-role="content" data-theme="a" data-fullscreen="false">
+				<div id="tweetlist">
+					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/GlutenFreeSoc" data-widget-id="329337172819853312">Tweets by @GlutenFreeSoc</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					
+					
+				</div><!--end tweetlist-->
+			</div><!--end content-->
+			<div data-role="footer" data-position="fixed" data-fullscreen="false" data-id="gf_footer">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" data-role="button" data-mini="true" data-icon="arrow-r" data-transition="slide" data-direction="reverse">Home</a></li>
+						<li><a href="#blog" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Blog</a></li>
+						<li><a href="#restaurantSearch" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Restaurant Search</a></li>
+						<li><a href="#photos" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r">Photos</a></li>
+						<li><a href="#" data-transition="slide" data-role="button" data-mini="true" data-icon="arrow-r" class="ui-btn-active">Tweets</a></li>
+					</ul>
+				</div><!--end navbar-->
+			</div><!--end footer-->
+		</div><!--end #restaurantSearch-->
+		
+		
+		
+		<div data-role="page" id="info" data-theme="a">
+			<div data-role="header" data-id="gf_header">
+				<h1>GFS Info</h1>
+			</div>
+			<div data-role="content">
+				<p>Gluten Free Social is an application meant to make living gluten free easier. Search for information and maybe even contribute to grow the GF community by spreading knowledge!</p>
+				<a href="#"
+					data-role="button"
+					data-inline="true"
+					data-rel="back"
+				>cancel</a>
+				<a href="#home"
+					data-role="button"
+					data-inline="true"
+				>home</a>
+			</div>
+		</div>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.mobile-1.3.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="http://glutenfreesocial.com/?json=recentstories&callback=listPosts" type="text/javascript"></script>
+	</body>
+</html>
